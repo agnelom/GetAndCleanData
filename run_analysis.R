@@ -29,7 +29,7 @@ trainSubjectData <- read.table(file.path(fPath_train,"subject_train.txt"))
 testFeaturesData <- read.table(file.path(fPath_test,"X_test.txt"))
 trainFeaturesData <- read.table(file.path(fPath_train,"X_train.txt"))
 
-## GOAL 1 - Mearging the Data
+## GOAL 1 ---------- Mearging the Data
 
 ## Merge the the Subject data for test and train using rbind to merge the rows
 subjectData <- rbind(testSubjectData,trainSubjectData)
