@@ -63,8 +63,8 @@ rm("Data")
 ## getting rid od duplicate column names as they could pose a problem during select()
 nonDupCols <- dataDF[!duplicated(names(dataDF))]
 
-## using specials functions "contains()" along with slect to only select measurements for 'mean()' and 'std()'
-## merging the output of both select commands into subData
+## using special functions "contains()" along with slect to only select measurements for 'mean()' and 'std()' and
+## on the way merging the output of both select commands into subData
 subData <- cbind(select(nonDupCols, Subject, Activity, contains("std()")),select(nonDupCols, contains("mean()")))
 
 
@@ -83,7 +83,7 @@ names(subData) <- gsub("Gyro","Gyroscope", names(subData))
 names(subData) <- gsub("Mag","Magnitude", names(subData))
 
 ## ---------------- GOAL 5 : - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+## Using chaining to aggregate, arrange and create the tidyData.txt file
 subData2 <- aggregate(. ~Subject + Activity, subData, mean)%>%
             arrange(Subject,Activity)%>%
             write.table(file="tidyData.txt", row.name = FALSE)
