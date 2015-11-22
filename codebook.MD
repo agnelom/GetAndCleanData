@@ -5,7 +5,7 @@
 - Activity 
 	- Activity names : Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, Laying
 	
-#### The below variables are average values respectively, averaged by Subject, by Activity (i.e one average value per subject per activity). From the original measurement for features, only measurements related to mean() and std() are included in the tidy data
+#### The below variables are average values respectively, averaged by Subject, by Activity (i.e average value of all variable per subject per activity). From the original measurement for features, only measurements related to mean() and std() are included in the tidy data
 
 - TimeBodyAccelerometer-std()-X 
 - TimeBodyAccelerometer-std()-Y 
