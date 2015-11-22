@@ -13,10 +13,10 @@
 
 ## Key instructions to execute the run_analysis.R script
 1. Download the zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to your working folder
-2. Extract the zip file to you working directory, the "UCI HAR Dataset" directory and its sub-directories with the required files will be created.
-3. download the "run_analysis.R" to the directory of you choice
-4. At R-prompt use command source("<<your-file-path>>/run_analysis.R")
-5. A file named "tidyData.txt" will be created in you working directory
+2. Extract the zip file to you working directory, the '"UCI HAR Dataset"' directory and its sub-directories with the required files will be created.
+3. download the '"run_analysis.R"' to the directory of you choice
+4. At R-prompt use command source(```<<your-file-path>>/run_analysis.R```)
+5. A file named ```tidyData.txt``` will be created in you working directory
 
 
 
